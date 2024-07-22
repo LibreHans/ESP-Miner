@@ -147,6 +147,9 @@ export class HomeComponent {
         } else if (info.stratumURL.includes('solo.d-central.tech')) {
           const address = info.stratumUser.split('.')[0]
           return `https://solo.d-central.tech/#/app/${address}`;
+        } else if (info.stratumURL.includes('public-pool.io')) {
+          const address = info.stratumUser.split('.')[0]
+          return `https://web.public-pool.io/#/app/${address}`;
         } else {
           return undefined;
         }
